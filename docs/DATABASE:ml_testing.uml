@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>764672e0-973d-4b66-9f2e-9525336f1b48.DATABASE:ml_testing</OriginalElement>
+  <nodes>
+    <node x="25.5" y="195.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.component</node>
+    <node x="162.35648148148147" y="0.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.product</node>
+    <node x="363.5" y="639.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.evaluation</node>
+    <node x="966.0439814814815" y="416.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.lang</node>
+    <node x="842.3125" y="663.5">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.user_lang</node>
+    <node x="204.5" y="135.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model</node>
+    <node x="926.3125" y="908.5">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.corpus_row</node>
+    <node x="713.4189814814815" y="416.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.user</node>
+    <node x="571.5" y="651.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.analytics.work_time</node>
+    <node x="96.0" y="639.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.hypothesis</node>
+    <node x="46.918981481481524" y="416.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model_component</node>
+    <node x="1161.0439814814815" y="440.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.domain</node>
+    <node x="333.35648148148147" y="0.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model_type</node>
+    <node x="1081.125" y="603.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.corpus</node>
+    <node x="685.4189814814815" y="195.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.role</node>
+    <node x="205.41898148148147" y="884.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.comment</node>
+    <node x="457.16898148148147" y="428.0">764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.row</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.corpus_row" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.row" relationship="REFERENCES">
+      <point x="-38.25" y="-42.0" />
+      <point x="964.5625" y="858.0" />
+      <point x="772.0" y="858.0" />
+      <point x="772.0" y="581.0" />
+      <point x="552.6689814814815" y="581.0" />
+      <point x="0.0" y="54.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model_type" relationship="REFERENCES">
+      <point x="48.75" y="-114.5" />
+      <point x="350.75" y="110.0" />
+      <point x="405.85648148148147" y="110.0" />
+      <point x="0.0" y="42.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.user" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.role" relationship="REFERENCES">
+      <point x="0.0" y="-66.5" />
+      <point x="0.0" y="54.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model_component" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.component" relationship="REFERENCES">
+      <point x="-51.0" y="-66.5" />
+      <point x="97.91898148148152" y="390.0" />
+      <point x="105.0" y="390.0" />
+      <point x="0.0" y="54.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model_component" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model" relationship="REFERENCES">
+      <point x="51.0" y="-66.5" />
+      <point x="199.91898148148152" y="390.0" />
+      <point x="302.0" y="390.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.analytics.work_time" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.user" relationship="REFERENCES">
+      <point x="0.0" y="-66.5" />
+      <point x="666.5" y="571.0" />
+      <point x="799.9189814814815" y="571.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.comment" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.hypothesis" relationship="REFERENCES">
+      <point x="-47.0" y="-66.5" />
+      <point x="252.41898148148147" y="858.0" />
+      <point x="216.0" y="858.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.corpus_row" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.corpus" relationship="REFERENCES">
+      <point x="38.25" y="-42.0" />
+      <point x="1041.0625" y="858.0" />
+      <point x="1178.625" y="858.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.corpus" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.lang" relationship="REFERENCES">
+      <point x="-48.75" y="-114.5" />
+      <point x="1129.875" y="581.0" />
+      <point x="1053.5439814814815" y="581.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.corpus" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.domain" relationship="REFERENCES">
+      <point x="48.75" y="-114.5" />
+      <point x="1227.375" y="581.0" />
+      <point x="1236.5439814814815" y="581.0" />
+      <point x="0.0" y="42.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.hypothesis" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.row" relationship="REFERENCES">
+      <point x="60.0" y="-78.5" />
+      <point x="276.0" y="581.0" />
+      <point x="552.6689814814815" y="581.0" />
+      <point x="0.0" y="54.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.product" relationship="REFERENCES">
+      <point x="-48.75" y="-114.5" />
+      <point x="253.25" y="110.0" />
+      <point x="237.85648148148147" y="110.0" />
+      <point x="0.0" y="42.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.comment" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.evaluation" relationship="REFERENCES">
+      <point x="47.0" y="-66.5" />
+      <point x="346.41898148148147" y="858.0" />
+      <point x="457.5" y="858.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.hypothesis" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model_component" relationship="REFERENCES">
+      <point x="-60.0" y="-78.5" />
+      <point x="156.0" y="581.0" />
+      <point x="148.91898148148152" y="581.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.user_lang" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.user" relationship="REFERENCES">
+      <point x="-53.5" y="-54.0" />
+      <point x="895.8125" y="571.0" />
+      <point x="799.9189814814815" y="571.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.evaluation" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.user" relationship="REFERENCES">
+      <point x="47.0" y="-78.5" />
+      <point x="504.5" y="571.0" />
+      <point x="799.9189814814815" y="571.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.evaluation" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.core.model" relationship="REFERENCES">
+      <point x="-47.0" y="-78.5" />
+      <point x="410.5" y="571.0" />
+      <point x="352.5" y="571.0" />
+      <point x="352.5" y="390.0" />
+      <point x="302.0" y="390.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.user_lang" target="764672e0-973d-4b66-9f2e-9525336f1b48.TABLE:ml_testing.admin.lang" relationship="REFERENCES">
+      <point x="53.5" y="-54.0" />
+      <point x="1002.8125" y="581.0" />
+      <point x="1053.5439814814815" y="581.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3600900225056264" showDependencies="false" x="656.5" y="508.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
