@@ -1,4 +1,4 @@
-CREATE DATABASE ML_TESTING;
+-- CREATE DATABASE ML_TESTING;
 
 -- DROP SCHEMA CORE CASCADE;
 -- DROP SCHEMA ADMIN CASCADE;
@@ -27,13 +27,16 @@ CREATE TABLE ADMIN.USER (
     id serial primary key,
     role_id serial references ADMIN.ROLE(id),
     name varchar(20),
-    surname varchar(80) not null
+    surname varchar(80) not null,
+    hourly_rate money
 );
 
 CREATE TABLE ADMIN.USER_LANG (
     user_id serial references ADMIN.USER(id),
     lang_id serial references ADMIN.LANG(id),
-    proficiency_level smallint
+    proficiency_level smallint,
+
+    primary key (user_id, lang_id)
 );
 
 CREATE TABLE CORE.PRODUCT (
@@ -128,13 +131,13 @@ CREATE TABLE ANALYTICS.WORK_TIME (
     finish_time timestamp
 );
 
-CREATE USER ml_db_admin;
-
-GRANT pg_read_all_data TO ml_db_admin;
-GRANT pg_write_all_data TO ml_db_admin;
-
-CREATE USER linguist;
-
-GRANT USAGE ON SCHEMA core TO linguist;
+-- CREATE USER ml_db_admin;
+--
+-- GRANT pg_read_all_data TO ml_db_admin;
+-- GRANT pg_write_all_data TO ml_db_admin;
+--
+-- CREATE USER linguist;
+--
+-- GRANT USAGE ON SCHEMA core TO linguist;
 
 

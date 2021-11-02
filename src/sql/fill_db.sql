@@ -15,12 +15,12 @@ INSERT INTO admin.role (name, can_view_analytics_flag) values
     ('data manager', B'0');
 
 
-INSERT INTO admin.user (role_id, name, surname) values
-    (2, 'jakub', 'korczakowski'),
-    (1, 'jan', 'korczakowski'),
-    (3, 'maciej', 'ciepelko'),
-    (3, 'kacper', 'branicki'),
-    (3, 'rafał', 'korsarz');
+INSERT INTO admin.user (role_id, name, surname, hourly_rate) values
+    (2, 'jakub', 'korczakowski', 100.0),
+    (1, 'jan', 'korczakowski', 50.0),
+    (3, 'maciej', 'ciepelko', 10.0),
+    (3, 'kacper', 'branicki', 25.0),
+    (3, 'rafał', 'korsarz', 45.0);
 
 INSERT INTO admin.user_lang (user_id, lang_id, proficiency_level) values
     (1, 2, 3),
