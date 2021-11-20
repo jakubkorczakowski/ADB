@@ -12,3 +12,12 @@ services:
         - ./sql:/opt/sql
     ports:
       - 5432:5432
+
+  mysql_db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+    - 3306:3306
